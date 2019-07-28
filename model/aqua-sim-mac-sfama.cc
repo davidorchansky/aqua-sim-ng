@@ -61,7 +61,7 @@ void AquaSimSFama_DataSend_Timer::expire()
 
 AquaSimSFama::AquaSimSFama():m_status(IDLE_WAIT), m_guardTime(0.005),
     m_slotLen(0), m_isInRound(false), m_isInBackoff(false),
-    m_maxBackoffSlots(20), m_maxBurst(1), m_dataSendingInterval(0.0000001),
+    m_maxBackoffSlots(100), m_maxBurst(1), m_dataSendingInterval(0.0000001),
   m_waitSendTimer(this), m_waitReplyTimer(this),
   m_backoffTimer(this), m_datasendTimer(this)
 {
