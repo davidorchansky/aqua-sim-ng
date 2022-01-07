@@ -545,7 +545,7 @@ AquaSimGoal::ProcessReqPkt(Ptr<Packet> ReqPkt)
 
 		Time BackoffTimeLen = GetBackoffTime(ReqPkt);
 		//this node is in the forwarding area.
-		if( BackoffTimeLen > 0.0 ) {
+		if( BackoffTimeLen.GetSeconds() > 0.0 ) {
 			AquaSimGoal_BackoffTimer* backofftimer = new AquaSimGoal_BackoffTimer(this);
       AquaSimGoalRepHeader goalReph;
 			Time RepPktTxtime = GetTxTime(goalReph.size(m_backoffType));

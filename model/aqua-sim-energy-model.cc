@@ -120,6 +120,12 @@ AquaSimEnergyModel::HandleEnergyRecharged(void)
   //Not currently used.
 }
 
+void
+AquaSimEnergyModel::HandleEnergyChanged (void)
+{
+  NS_LOG_FUNCTION (this);
+  //Not implemented
+}
 
 double
 AquaSimEnergyModel::GetCurrentA(void) const

@@ -2401,7 +2401,7 @@ AquaSimRMac::ProcessNDPacket(Ptr<Packet> pkt)
   NS_LOG_FUNCTION(this);
   AquaSimHeader asHeader;
   TMacHeader tHeader;
-  MacHeader(mach);
+  MacHeader mach;
   pkt->RemoveHeader(asHeader);
   pkt->RemoveHeader(mach);
   pkt->PeekHeader(tHeader);

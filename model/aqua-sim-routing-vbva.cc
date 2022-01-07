@@ -899,7 +899,7 @@ void AquaSimVBVA::ProcessBackpressurePacket(Ptr<Packet> pkt)
 
 void AquaSimVBVA::ConsiderNew(Ptr<Packet> pkt)
 {
-  AquaSimHeader(ash);
+  AquaSimHeader ash;
   VBHeader vbh;
   pkt->RemoveHeader(ash);
   pkt->PeekHeader(vbh);

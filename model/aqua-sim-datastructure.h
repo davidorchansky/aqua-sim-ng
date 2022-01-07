@@ -49,11 +49,12 @@
 #define EXPENSION_DATA 16
 
 // next hop status
-#define UNKNOWN 1
-#define FRESHED 2
-#define DEAD 3
-//#define SUPPRESSED 4
-
+enum NextHopStatus { 
+  UNKNOWN = 1,
+  FRESHED = 2,
+  DEAD = 3,
+  //SUPPRESSED = 4
+};
 
 
 // packet status

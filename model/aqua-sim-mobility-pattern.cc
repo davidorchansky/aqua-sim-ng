@@ -77,7 +77,7 @@ LocationCache::LastUpdateTime() {
 bool
 LocationCache::InRange(double t) {
   return t >= m_fstUptTime &&
-          t < (Simulator::Now() + m_interval * (Capacity() - 1));
+          t < (Simulator::Now().GetSeconds() + m_interval * (Capacity() - 1));
 }
 
 /**
